@@ -1,0 +1,17 @@
+
+I have 40 data point for my question.
+
+1) Among the 40 startup cities in the US, 18 US cities are ranked in top 50 cities in the world. If you randomly selected one city, what is the probability that it is ranked in top 50 cities globally. 
+
+2) Among the 40 startup cities in the US, 9 cities have a total score greater than 30 (event T) and 18 US cities are ranked in the top 50 cities globally (Event R). If you select one city randomly, what is the probability that the city has a total score less than 30 but is ranked in the top 50 startup cities globally. Note: P(T^c u R) = 1
+
+
+
+3) In the data table above,  cities have a total score higher than 10. If you randomly selected one city, what is the probability that the total score is less than 10.
+
+4) Among the 40 startup cities in the US, 23 cities have a total score higher than 10 (event T) and 34 US cities are ranked in the top 100 cities globally (Event R). If you select one city randomly, what is the probability that the city has a total score less than 10 but is ranked in the top 100 startup cities globally. Note: P(T^c u R) = 1
+
+The sample space is the list of 40 startup cities, and the event is a city being among the top 50 globally ranked startup cities.
+This question involves the relationship between two events, solving it using a Venn diagram and finding the probability of their intersection.
+This explores set operations by calculating the probability of the complement of an event i.e. cities with total score less than 10 from the given set of startup cities.
+This question combines different probability events i.e. cities have a total score higher than 10 (event T) and cities that are ranked in the top 100 cities globally and applies probability axioms and properties to find the probability of their intersection.
