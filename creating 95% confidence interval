@@ -1,0 +1,25 @@
+My data is the total score of the top startup cities in the US. We only have 40 cities total score so we should use the confidence integral. We don't have the the total score of all cities so we cannot know the total population mean. In this case we will use the sample mean of the 40 startup cities in the US. My sample is the top 40 startup cities in the US. 
+
+My data is not randomly sampled as well as we are only taking the top 40 startup cities in the US. This was a biased selection process so its not a randomly sampled data as we are only selected the top 40 cities in the US.  The data is equal to 40 data points so we fulfill the assumption of n>=40. In this data point the true population SD is unknown as we are only taking the SD of the top 40 startup cities in the US and total score of other US cities is unknown. 
+
+R code and the Answers:
+> n <- length(rankings) 
+> mean_ranking <- mean(rankings) 
+> cat("Sample Mean:", mean_ranking) Sample Mean: 38.84587 
+> std_dev_ranking <- sd(rankings) 
+> cat("Sample Standard Deviation:" , std_dev_ranking) Sample Standard Deviation: 91.35859 
+> se <- std_dev_ranking / sqrt(n) 
+> cat ("Standard Error SE:", se) Standard Error SE: 14.44506 
+> critical_value <- qt(0.975, df = n - 1) 
+> me <- critical_value * se 
+> cat("Margin of Error:", me) Margin of Error: 29.2179 
+> ci_lower <- mean_ranking - me 
+> ci_upper <- mean_ranking + me 
+> cat("95% Confidence Interval: [", ci_lower, "," , ci_upper, "]") 
+> 95% Confidence Interval: [ 9.62798 , 68.06377 ]
+
+The 95% confidence interval for top 40 startup cities in the US is [ 9.62798, 68.06377]
+
+Interpreting out data, we notice that there is a big difference between the two number. This is because there is a huge difference between the 1st and 40th cities total score. As the city ranking goes down the total score decreased significantly which explains the big interval difference between the lower and upper bounds of the Interval.
+
+We can conclude that we are 95% confident that the total score of a top startup city in the US will be between [ 9.62798, 68.06377]. 
