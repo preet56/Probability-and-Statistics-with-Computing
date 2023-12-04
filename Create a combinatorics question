@@ -1,0 +1,9 @@
+This is the histogram of the total score of my 40 top startup cities in US datapoint. 
+
+
+
+My question is:-
+
+In 40 US cities what is the probability that if you selected three cities randomly from the data then at least one city is ranked in the top 10 cities.
+
+In this question we are using combination i.e. selecting three cities randomly and probability concepts i.e. probability of at least one city being in the top 10.
